@@ -19,10 +19,18 @@ print(type(new_string))
 #num_colors=len(fav_colors)
 #print(num_colors)
 
-color = "orange"
-my_count = len(color)
-print(my_count)
+#color = "orange"
+#my_count = len(color)
+#print(my_count)
 
-for c in color:
-    print(c)
+#for c in color:
+ #   print(c)
 
+# Fahrenheit to Celsius
+fahrenheit = 89
+Celsius=(fahrenheit-32)*5/9
+print("If fahrenheite=",fahrenheit,"then Celsius=",Celsius)
+
+#Eval
+cold_weather = "True"
+print(eval(cold_weather))
