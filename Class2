@@ -1,0 +1,21 @@
+print(4+2)
+# first_name = "Aaliyah"
+# print(first_name)
+print(25-18)
+print(3-55)
+print(8*6)
+print(6/2)
+#print(5/0)
+#try:
+ #   print(7/0)
+#except ZeroDivisionError as e:
+ #   print("You cannot divide by zero")
+print(5**3)
+print(4//3)
+print(5//2)
+print(5%2)
+print(100 % 5)
+print(7%6)
+print(7%5)
+print(4%7)
+print(84/203)
