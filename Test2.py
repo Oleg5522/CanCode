@@ -41,7 +41,7 @@ for s in student_grades:
     print(demographic_info)
     print(type(demographic_info))
 
-    #cast a string to integer
+#cast a string to integer
     my_string = "5"
 
     new_number = int(my_string)

@@ -1,11 +1,11 @@
 #cast a string to integer
-#    my_string = "5"
-#print(type(my_string))
+my_string = "12"
+print(type(my_string))
 
- #   new_number = int(my_string)
+new_number = int(my_string)
 
-#print(new_number)
-#print(type(new_number))
+print(new_number)
+print(type(new_number))
 
 second_num=10
 print(type(second_num))
