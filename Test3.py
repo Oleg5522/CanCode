@@ -1,5 +1,5 @@
 #cast a string to integer
-my_string = "12"
+my_string = "1266"
 print(type(my_string))
 
 new_number = int(my_string)

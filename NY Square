@@ -1,0 +1,18 @@
+def sum(a, b, c, d, e):
+    return (a + b + c + d + e)
+
+a = float(input('Brooklyn Square : '))
+b = float(input('Manhattan Square: '))
+c = float(input('Queens Square: '))
+d = float(input('Staten Island Square: '))
+e = float(input('Bronx Square: '))
+
+print("Is Brooklyn larger then Manhattan?", a>b )
+print("Is State Island less than Queens?", d<c)
+print("Are Brooklyn and Manhattan largest then Queens?", (a+b)>c)
+
+print("What is largest area?", max(a,b,c,d,e))
+print("what is smallest area?", min(a,b,c,d,e))
+
+
+print(f"NYC square is {sum(a,b,c,d,e)}")

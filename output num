@@ -1,0 +1,12 @@
+num = 5
+num //=2
+num +=1
+print(num)
+
+F = 89
+Celcium = F-32
+Celcium *=5
+Celcium /=9
+print(Celcium)
+
+print("Whether F grater than Celcium", F>Celcium)
