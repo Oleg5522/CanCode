@@ -137,6 +137,11 @@ print(test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
 
+email1 = 'hbgcyfy@.com'
+print(email1.index("@"))
+test2 = (email1[-5]=='@')
+print(test2)
+
 # Test 3: There is at least one character before the "@" symbol
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
@@ -145,13 +150,13 @@ print(test_1)
 
 
 # End Parameter
-# print('Hello', end=' ')
-# print('World', end='')
-# print('!', end='\n')
+print('Hello', end=' ')
+print('World', end='')
+print('!', end='\n')
 
 
 # Sep Parameter
-# print("Today I woke up at ", 8, " am", sep='*')
+print("Today I woke up at ", 8, " am", "Ok", sep='*')
 
 '''
 Get input from the user and store it in a variable called userin.
