@@ -1,0 +1,5 @@
+word_main=input('Input word', )
+length_w_m=len(word_main)
+print('*'*(length_w_m+2))
+print("*"+word_main+'*')
+print('*'*(length_w_m+2))
