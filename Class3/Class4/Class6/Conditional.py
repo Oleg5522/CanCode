@@ -29,10 +29,17 @@
    # else:
 #print('Even')
 
-user_input = input('Enter data')
-if user_input.isdigit():
-    print(f'{user_input} is a number')
-elif user_input.isalpha():
-    print(f'{user_input} is a word')
-else:
-    print(f'{user_input} is something else')
+#user_input = input('Enter data')
+#if user_input.isdigit():
+ #   print(f'{user_input} is a number')
+#elif user_input.isalpha():
+#    print(f'{user_input} is a word')
+#else:
+#    print(f'{user_input} is something else')
+
+while True:
+    user_input = ('Please enter number: ')
+    if user_input.isdecimal():
+        print('Thanks')
+        break
+
