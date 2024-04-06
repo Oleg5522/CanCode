@@ -1,0 +1,38 @@
+u = 'admi_8n#'
+print(u.isalnum())
+print(u.isspace())
+import re 
+uppercase_test_regex = bool(re.match(r'\w*[A-Z]\w*', u))
+print('Contains at least one uppercase letter? ', uppercase_test_regex)
+lowletter_test_regex = bool(re.match(r'\w*[a-z]\w*', u))
+print('Contains at least one lowcase letter? ', lowletter_test_regex)
+number_test_regex = bool(re.match(r'\w*[0-9]\w*', u))
+print('Contains number? ', number_test_regex)
+underscore_test_regex = bool(re.match(r'\w*_\w*', u))
+print('Contains _? ', underscore_test_regex)
+
+#Password:
+
+special_character = bool(re.match(r'\w*[!, ?, @, #, $, ^, &, *, _, -]\w*', u))
+print('Contains SCh? ', special_character)
+
+has_space = re.search(r'\s', u)
+print('Does it have space ?', has_space)
+
+Taken_usernames = ('admin', 'admin123', 'superuser', 'superuser123')
+if u not in list(Taken_usernames):
+    print('Username is unique')
+
+print(u.isidentifier())
+
+while True:
+
+    user_input = input("Please enter your string ")
+    print(user_input)
+    if len(user_input)>=10:
+        print(f"Test passed, {user_input} is greater than 10")
+        break
+    else:
+        print(f"Test failed, {user_input} is less 10")
+        continue
+
