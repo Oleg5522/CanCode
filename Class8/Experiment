@@ -1,4 +1,4 @@
-u = 'admi_8n#'
+u = 'admi_8 n#'
 print(u.isalnum())
 print(u.isspace())
 import re 
@@ -36,3 +36,19 @@ while True:
         print(f"Test failed, {user_input} is less 10")
         continue
 
+    # Even better, is the any function! Tests if any of items in iterable is true
+# any_uppercase = any(u.isupper() for u in test_string)
+# print('Contains at least one uppercase letter? ', any_uppercase)
+
+any_upper = any(x.isupper for x in u)
+if any_upper:
+    print(f'Password passed, {u} contains uppercase letter')
+else:
+    print(f'Test failed, {u} does not contain an uppercase letter')
+
+'At least 8 characters long',
+'Contains at least one uppercase letter',
+'Contains at least one lowercase letter',
+'Contains at least one digit',
+'Contains at least one of these characters: !, ?, @, #, $, ^, &, *, _, -',
+'Does not contain any spaces'

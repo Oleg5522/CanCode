@@ -1,0 +1,22 @@
+import re
+p = input('Enter')    
+any_upper = any(x.isupper() for x in p)
+if any_upper:
+        print(f'Password passed, {p} contains uppercase letter')
+else:
+        print(f'Password failed, {p} does not contain an uppercase letter')
+
+
+lowletter_test_regex = bool(re.match(r'\w*[a-z]\w*', p))
+if lowletter_test_regex:
+        print(f'Password passed, {p} contains lowercase letter')
+else:
+        print(f'Password failed, {p} does not contain a lowercase letter')
+
+for t in p:
+     if any(t.isupper()):
+        print(f'Password passed, {p} contains lowercase letter.')
+     else:
+        print(f'Password failed, {p} does not contain a lowercase letter.')
+        
+       

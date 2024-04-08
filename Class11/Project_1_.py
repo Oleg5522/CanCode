@@ -27,59 +27,54 @@ while True:
             
 
         
-    p = input('Please, create the password. The password must be:'
-'At least 8 characters long',
-'Contains at least one uppercase letter',
-'Contains at least one lowercase letter',
-'Contains at least one digit',
-'Contains at least one of these characters: !, ?, @, #, $, ^, &, *, _, -',
-'Does not contain any spaces', ) #User creation of a password
+    p = input( 'Please, create the password. The password must be:') #User creation of a password
     print(p)
     if len(p)>=8: #Checking the minimum password length
         print(f"Password passed, {p} is greater than 8")
     else:
         print(f"Password failed, {p} is less 8")
+        continue
         
 
 # Checking at least 1 uppercase letter
     any_upper = any(x.isupper for x in p)
     if any_upper:
-    print(f'Password passed, {p} contains uppercase letter')
+       print(f'Password passed, {p} contains uppercase letter')
     else:
-    print(f'Test failed, {p} does not contain an uppercase letter')
+       print(f'Test failed, {p} does not contain an uppercase letter')
     
 
  # Checking at least 1 lowercase letter
     any_lower = any(y.islower for y in p)
     if any_lower:
-    print(f'Password passed, {p} contains lowercase letter')
+       print(f'Password passed, {p} contains lowercase letter')
     else:
-    print(f'Test failed, {p} does not contain a lowercase letter')
+       print(f'Test failed, {p} does not contain a lowercase letter')
     
 
 # Checking at least 1 digit
     digit_re = bool(re.match(r'\w*[0-9]\w*', p))
     if digit_re:
-    print('Password passed, it contains digit')
+       print('Password passed, it contains digit')
     else:
-    print('Password failed, it does not contain a digit')
+       print('Password failed, it does not contain a digit')
     
 
 ## Checking at least 1 special character
     special_character = bool(re.match(r'\w*[!, ?, @, #, $, ^, &, *, _, -]\w*', p))
     if special_character:
-    print('Password passed, it contains special character')
+       print('Password passed, it contains special character')
     else:
-    print('Password failed, it does not contain any special character')
+       print('Password failed, it does not contain any special character')
     
 
 # Checking for missing spaces
     has_space = re.search(r'\s', p)
     if not has_space:
-    print('Password passed, it does not contain any space')
-    print('You signed up succesfully!')
+       print('Password passed, it does not contain any space')
+       print('You signed up succesfully!')
     else:
-    print('Password failed, it contains space')
+       print('Password failed, it contains space')
     
 
 
