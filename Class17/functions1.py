@@ -1,5 +1,5 @@
 import math
-import pandas
+#import pandas
 #import name_module
 
 '''
@@ -18,7 +18,18 @@ Write a function that will loop through a string and print whether a character i
 
 #name_module.isvowels('America')
 
+def greet(name):
+    #name = input("Hello")
+    return (f"Hello ", name)
+print(greet('Sarah'))
 
+#print(greet("Oleg"))
+
+def double_me(value):
+    result = value * 2
+    print(result)
+num=10
+double_me(num)
 
 
 
@@ -52,11 +63,11 @@ Surface Area = 4 * pi * radius^2
 
 '''
 
-def s_a_sph(r):
-     r = input('Enter radius')
-     return 4*math.pi*r**2
-print(s_a_sph(r))
-s_a_sph(10)
+#def s_a_sph(r):
+#     r = input('Enter radius')
+#     return 4*math.pi*r**2
+#print(s_a_sph(r))
+#s_a_sph(10)
 
 
 ''' Lets follow these functions through line by line and analyse the return statements'''
@@ -100,7 +111,7 @@ Return how many times the value was removed.
 
 sample_list = [4,5,3,2,4,3,3,3,3,2,2,1,1,1,1,0,5]
 value = 5
-
+#def 
 
 
 '''
