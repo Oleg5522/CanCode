@@ -8,28 +8,28 @@ Write a function that will loop through a string and print whether a character i
 '''
 #def isvowel(string):
 #     pass
-#   string = input('Please enter character', )
-#vowels = range('e','u','i','o','a')
-#for v in vowels:
-#     if v in string:
-#     print('This is a vowel')
+#string = input('Please enter character', )
+#vowels = ['e','u','i','o','a']
+#for v in string:
+#     if v in vowels:
+#       print(f' {v} This is a vowel')
 #     else:
-#     print('This is not a vowel')
+#       print(f'{v}This is not a vowel')
 
 #name_module.isvowels('America')
 
-def greet(name):
-    #name = input("Hello")
-    return (f"Hello ", name)
-print(greet('Sarah'))
+#def greet(name):
+#    #name = input("Hello")
+#    return (f"Hello ", name)
+#print(greet('Sarah'))
 
 #print(greet("Oleg"))
 
-def double_me(value):
-    result = value * 2
-    print(result)
-num=10
-double_me(num)
+#def double_me(value):
+#    result = value * 2
+#    print(result)
+#num=10
+#double_me(num)
 
 
 
@@ -50,10 +50,10 @@ Surface Area = width*2 + length*2 + height*2
 
 #name_module.surface_area()
 
-#def s_a(w,l,h):
-#     return 2*(w*l)+(h*l)+(w*h)
+def s_a(w,l,h):
+     return 2*((w*l)+(h*l)+(w*h))
 #     s_a(5,4,3)
-#     print(s_a)
+print(s_a(5,4,3))
 
 
 '''
@@ -62,7 +62,7 @@ Write a function that returns the surface area of a sphere.
 Surface Area = 4 * pi * radius^2
 
 '''
-
+#r = 3
 #def s_a_sph(r):
 #     r = input('Enter radius')
 #     return 4*math.pi*r**2
@@ -72,14 +72,15 @@ Surface Area = 4 * pi * radius^2
 
 ''' Lets follow these functions through line by line and analyse the return statements'''
 
-# def get_vowels(word):
-#     out = ''
-#     vowels = 'aeiou'
-#     for w in word:
-#         if w in vowels:
-#             out += w
+def get_vowels(word):
+     out = ''
+     vowels = 'aeiou'
+     for w in word:
+         if w in vowels:
+             out += w
     
-#     return out
+     return out
+print(out)
 
 # my_word = 'bananas'
 

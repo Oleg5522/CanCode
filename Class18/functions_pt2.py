@@ -63,7 +63,7 @@ Median: 4
 Mode: 5
 '''
 
-
+my_list = [1,2,4,5,5]
 def get_stats():
     mean = statistics.mean(my_list)
     median = statistics.median(my_list)
@@ -71,14 +71,9 @@ def get_stats():
     print(mean)
     print(median)
     print(mode)
-my_list = [1,2,4,5,5]
-get_stats(my_list)
+    #return f'Mean: {mean}'
 
-
-'''Global variables'''
-
-# x = 'challenging'
-# def change_x():
+#print(get_stats(my_list))
 #     x = 'fun'
 
 # change_x()
@@ -99,7 +94,13 @@ Syntax: lambda arguments : expression
 '''
 
 # Function to add two numbers
+def add_two(x,y):
+    return(x+y)
+print(add_two(5,7))
+lambda x,y: x+y
 
+add_2 = lambda x,y: x+y
+print(add_2(4,6))
 
 
 # Written as a Lambda
@@ -112,10 +113,17 @@ Syntax: lambda arguments : expression
 def greeting(fname):
     print(f'Hello, {fname}')
 
+greet = lambda z: print(f'Hello, {z}') 
+print(greet('Oleg'))
+
+
 
 def double_me(num):
     return num + num
 
+double_me = lambda x: float(x+x)
+print(double_me(20))
+print(double_me(4.5))
 
 '''
 Exercise
@@ -154,6 +162,8 @@ students = [{"name":"Kim","grade":98},
             {"name":"Torrie","grade":65},
             {"name":"Simon","grade":78}]
 
+sorted_by_names = 
+
 
 
 '''
@@ -165,6 +175,7 @@ parameters - assets, liabilities
 Must contain type hinting for the parameters as well as what the function will be returning
 Call the function in a print statement with needed arguments
 '''
+
 
 
 
