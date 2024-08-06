@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Lesson.css"> 
+</head>
+<body>
+    <h1 id="mouse"></h1>
+    <script>
+        function glass(p1,p2,p3,p4) {
+            return p1-(p2*p3)
+        }
+
+        document.getElementById("mouse").innerHTML=glass(13,94,67,42);
+    </script>
+
+    <button onclick="phone()" id="but">Click here for today`s date</button>
+    <script>
+        function phone() {
+            document.getElementById("demo2").innerHTML=Date();
+        }
+    </script>
+    <p id="demo2"></p>
+    
+</body>
+</html>
