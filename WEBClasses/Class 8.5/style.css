@@ -1,0 +1,29 @@
+.mouse {
+    display: grid;
+    background-color: blue;
+    padding: 20px;
+    grid-template-columns: auto 25px auto;
+    grid-template-rows: 100px 100px;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.mouse > div {
+    background-color: red;
+    border: solid; 
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    
+    align-content: center;
+}
+
+/*.two {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.five {
+    grid-row-start: 1;
+    grid-row-end: 5;
+}*/
