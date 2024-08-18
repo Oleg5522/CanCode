@@ -16,7 +16,7 @@
 .one {
     color: rgb(4, 61, 61);
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-align: center;
 
 }
@@ -37,6 +37,6 @@
 }
 
 iframe {
-    width: 80vw;
-    height: 60vh;
+    width: 50vw;
+    height: 55vh;
 }
